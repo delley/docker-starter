@@ -45,6 +45,34 @@ Docker studies in Fedora 25
 
 
 ## Basic commands
-1. Verify the containers existence in execution:
+* Verify the containers existence in execution:
 
         $ docker ps
+
+* Create a container and access your interactive shell:
+
+        $ docker run -i -t fedora /bin/bash
+
+* List all containers
+
+        $ docker ps -a
+
+* Get container ID
+
+        $ docker ps -qa
+
+* Check container details
+
+        $ docker stats [container_ID]
+
+* List all images
+
+        $ docker images
+
+* Remove a container
+
+        $ docker rm [container_ID]
+
+
+
+
