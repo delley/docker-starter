@@ -18,6 +18,7 @@ Docker studies in Fedora 25
 
         $ sudo systemctl start docker
 
-5. Now verify if docker is up and running:
+5. Now verify if ```docker``` is up and running:
 
-        $ sudo Docker run fedora /bin/echo Hello Docker!
+        $ sudo docker run fedora /bin/echo Hello Docker!
+
