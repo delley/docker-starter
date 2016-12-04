@@ -40,7 +40,7 @@ Docker studies in Fedora 25
 
 4. Verify that your user is in the docker group by running docker without sudo.
 
-       $ docker run fedora /bin/echo Hello Docker!
+        $ docker run fedora /bin/echo Hello Docker!
 
 
 
