@@ -73,6 +73,13 @@ Docker studies in Fedora 25
 
         $ docker rm [container_ID]
 
+* Set a name to new container
+
+        $ docker run -it --name jdk8 fedora
+
+* Commit the changes
+
+        $ docker commit [container_ID] [image_name]
 
 
 
