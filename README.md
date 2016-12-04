@@ -81,5 +81,35 @@ Docker studies in Fedora 25
 
         $ docker commit [container_ID] [image_name]
 
+* Create self-destructive containers with `--rm` option
 
+        $ docker run -it --rm fedora /bin/bash
+
+* Mapping ports between host and container with `-p` option
+
+        $ docker run -it -p 8080:80 fedora /bin/bash
+
+* Send execution to background with `-d` option
+
+        $ docker run -d fedora /bin/echo Hello Docker!
+
+* Stop the container
+
+        $ docker stop [container_name or container_ID] 
+
+* Start the container
+
+        $ docker start [container_name or container_ID] 
+
+* Remove a image
+
+        $ docker rmi [image_ID]
+
+* Remove all containers
+
+        $ docker rm $(docker ps -qa)
+
+* Remove all images
+
+        $ docker rmi $(docker images -q)
 
