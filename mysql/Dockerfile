@@ -2,7 +2,7 @@ FROM ubuntu
 MAINTAINER Francisco Oliveira <delley.fx@gmail.com>
 
 ENV DEBIAN_FRONTEND noninteractive
-RUN apt-get update -qq && apt-get install -y mysql-server-5.5
+RUN apt-get update -qq && apt-get install -y mysql-server-5.7
 
 ADD my.cnf /etc/mysql/conf.d/my.cnf
 RUN chmod 664 /etc/mysql/conf.d/my.cnf
